@@ -7,6 +7,7 @@
 }
 
 .ps-menu-area-vertical {
+    float: left;
     width: 200px;
     min-height: 100vh;
     padding-top: 30px;
@@ -61,7 +62,7 @@
 
 .ps-menu-active-indicator {
     float: right;
-    color: #444;
+    color: #ccc;
     margin-right: 0;
     margin-top: 8px;
 }
