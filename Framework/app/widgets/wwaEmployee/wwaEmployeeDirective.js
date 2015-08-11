@@ -6,11 +6,23 @@ angular.module('app').directive('wwaEmployee',
         return {
             templateUrl: 'app/widgets/wwaEmployee/wwaEmployeeTemplate.html',
             link: function (scope, el, attrs) {
-                scope.selectedLocation = null;
-                dataService.getEmployee(scope.item.widgetSettings.id)
-                    .then(function (data) {
-                        scope.selectedEmployee = data;
-                    });
+                scope.selectedEmployee = null;
+                scope.isLoaded = false;
+                scope.hasError = false;
+
+                scope.loadEmployee = function () {
+                    scope.hasError = false;
+                    dataService.getEmployee(scope.item.widgetSettings.id)
+                        .then(function (data) {
+                            scope.selectedEmployee = data;
+                            scope.isLoaded = true;
+                            scope.hasError = false;
+                        }, function (error) {
+                            scope.hasError = true;
+                        });
+                };
+
+                scope.loadEmployee();
             }
         };
     }]);

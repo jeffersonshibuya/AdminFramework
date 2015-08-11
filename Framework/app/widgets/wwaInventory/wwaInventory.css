@@ -38,6 +38,12 @@
     min-height: 180px;
 }
 
+.wwa-inventory-body .fa-spin {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
 .wwa-inventory-area {
     position: absolute;
     width: 350px;

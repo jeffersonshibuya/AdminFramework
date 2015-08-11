@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\appController.js" />
     <Content Include="app\appRouteConfig.js" />
     <Content Include="app\dialogs\wwaSelectEmployeeController.js" />
     <Content Include="app\dialogs\wwaSelectEmployeeTemplate.html" />
@@ -82,6 +83,10 @@
     <Content Include="ext-modules\psDashboard\psDashboardTemplate.html" />
     <Content Include="ext-modules\psDashboard\psWidgetBodyDirective.js" />
     <Content Include="ext-modules\psDashboard\psWidgetBodyTemplate.html" />
+    <Content Include="ext-modules\psFramework\psUserProfile\psUserProfileDirective.js" />
+    <Content Include="ext-modules\psFramework\psUserProfile\psUserProfileSmallDirective.js" />
+    <Content Include="ext-modules\psFramework\psUserProfile\psUserProfileSmallTemplate.html" />
+    <Content Include="ext-modules\psFramework\psUserProfile\psUserProfileTemplate.html" />
     <Content Include="images\employee-andy.png" />
     <Content Include="images\employee-april.png" />
     <Content Include="images\employee-don.png" />
@@ -163,6 +168,8 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-2.1.3.js" />
     <Content Include="Scripts\jquery-2.1.3.min.js" />
+    <Content Include="Scripts\ngStorage.js" />
+    <Content Include="Scripts\ngStorage.min.js" />
     <Content Include="Scripts\npm.js" />
     <Content Include="Web.config" />
     <Content Include="Scripts\jquery-2.1.3.min.map" />

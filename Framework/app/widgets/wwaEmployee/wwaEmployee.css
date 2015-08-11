@@ -21,6 +21,12 @@
     height: 100%;
 }
 
+.wwa-employee-body .fa-spin {
+    position: absolute;
+    left: 10px;
+    top: 40px;
+}
+
 .wwa-employee-row {
     display: table-row;
 }
